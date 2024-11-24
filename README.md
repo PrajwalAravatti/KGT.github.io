@@ -1,1 +1,2 @@
 # KGT.github.io
+We are embarking on an ambitious project to design and develop a smart city spanning 1500 square kilometers near Kurnool. This project aims to create a sustainable, technologically advanced, and citizen-centric urban environment. By leveraging cutting-edge technologies and innovative solutions, we aim to improve the quality of life for residents, boost economic growth, and create a model for sustainable urban development.
