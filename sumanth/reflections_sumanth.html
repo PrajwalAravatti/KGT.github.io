@@ -234,6 +234,44 @@
 </body>
 </html>
 
+                </head>
+<body>
+    <h1>4.Hierarchical Data and Tree Structures</h1>
+    <ul>
+       
+    <h1>Hierarchical Data and Tree Structures</h1>
+    <p>To manage hierarchical data effectively, we started with basic tree structures and gradually introduced new techniques to make operations like searching, inserting, and deleting faster and more efficient. Below is a discussion of how different types of trees help solve these problems:</p>
+    
+    <h2>Tree</h2>
+    <p>A tree represents hierarchical relationships, like family trees or file systems, where each element (node) can have multiple children. However, a simple tree doesn't help much when it comes to speeding up searches or organizing data efficiently.</p>
+    
+    <h2>Binary Tree</h2>
+    <p>A binary tree limits each node to up to two children, helping to organize data. But without sorting rules, it’s still not efficient for operations like searching or inserting new nodes.</p>
+    
+    <h2>Binary Search Tree (BST)</h2>
+    <p>A binary search tree (BST) improves efficiency by enforcing a sorting rule: the left child of a node is smaller, and the right child is larger. This speeds up searches, but if the tree becomes unbalanced (e.g., forms a straight line), search times can degrade to O(n), which is suboptimal.</p>
+    
+    <h2>2-3 Tree</h2>
+    <p>The 2-3 tree addresses the issue of unbalanced trees by being a self-balancing structure. Nodes can have two or three children, ensuring the tree remains balanced and operations like searching stay efficient with a time complexity of O(log n).</p>
+    
+    <h2>AVL Tree</h2>
+    <p>An AVL tree takes balancing further by using rotations to ensure the height difference between the left and right subtrees of each node is at most 1. This guarantees O(log n) time complexity for operations but requires extra rotations during inserts and deletes.</p>
+    
+    <h2>Red-Black Tree</h2>
+    <p>To simplify balancing, the Red-Black tree uses color-coding (red or black) for nodes. While it’s not as strictly balanced as the AVL tree, it still ensures efficient operations with fewer rotations, making it a practical choice for many applications.</p>
+    
+    <h2>Heap (Priority Queue)</h2>
+    <p>For prioritizing elements (e.g., in task scheduling or priority queues), heaps are used. A heap is a binary tree where each parent node is either greater (max-heap) or smaller (min-heap) than its children. It ensures quick access to the highest or lowest priority element, with insertion and removal operations being efficient.</p>
+    
+    <h2>Trie</h2>
+    <p>To handle strings and prefix-based searches, a trie stores characters in nodes. This makes it extremely efficient for operations like autocomplete or dictionary lookups, as searching, inserting, or deleting strings depends only on their length, not the total number of strings stored.</p>
+</body>
+</html>
+    </ul>
+</body>
+</html>
+
+
             </ul>
         </div>
 
