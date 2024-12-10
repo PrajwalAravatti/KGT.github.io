@@ -1,16 +1,15 @@
-
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to bottom right, #f7f7fa, #d9d9e2);
+    background: linear-gradient(to bottom right, #00bfff, #d9d9e2);
     color: #212529;
 }
 
 header {
     background-color: #f4419a;
-    color: #ffffff;
+    color: #9ed9ed;
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -34,7 +33,7 @@ nav {
 nav a {
     font-size: 1.1rem;
     color: #ffffff;
-    background-color: #f4419a;
+    background-color: #9ed9ed;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -62,7 +61,7 @@ main:hover {
 }
 
 h2 {
-    color: #f4419a;
+    color:  #000fff;
     font-size: 2rem;
     margin: 20px 0;
     border-bottom: 3px solid #dcdfe7;
@@ -72,12 +71,12 @@ h2 {
 }
 
 h2:hover {
-    color: #f4419a;
+    color:black;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 div {
-    background: #edf2fb;
+    background: #9ed9ed;
     border: 1px solid #cfd8ea;
     padding: 20px;
     margin: 20px auto;
@@ -87,7 +86,7 @@ div {
 }
 
 div:hover {
-    background-color: #f3f6fc;
+    background-color: #65c3e6;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
 }
