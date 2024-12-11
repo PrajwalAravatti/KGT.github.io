@@ -277,13 +277,13 @@
 </head>
 <body>
     <h1>The Need for Array Query Algorithms</h1>
-    <p>Array query algorithms are essential for efficiently retrieving information from specific ranges within datasets. They are particularly useful in scenarios where frequent queries about data sub-ranges are needed, such as finding the sum, minimum, or maximum within a range. Without these algorithms, recalculating values for each query would be computationally expensive, especially for large datasets. These algorithms help reduce time complexity, making them critical for applications involving dynamic or static datasets.</p>
+    <p>Array query algorithms are essential for efficiently retrieving information from specific ranges within given data. They are  useful in scenarios where  where we frequently query about data sub-range such as finding the sum, minimum, or maximum within a range. Without these algorithms, recalculating values for each query would be difficult, especially for large data. These algorithms help reduce time complexity, helps  for applications involving dynamic or static datas.</p>
     
     <h2>Principles of Array Query Algorithms</h2>
     <ul>
-        <li><strong>Precomputation:</strong> Many algorithms, like lookup tables and sparse tables, rely on precomputing values for different ranges to enable fast queries.</li>
-        <li><strong>Efficiency:</strong> The goal is to reduce time complexity from linear (O(n)) to logarithmic (O(log n)) or even constant time (O(1)).</li>
-        <li><strong>Space-Time Tradeoff:</strong> While lookup tables provide constant-time queries, they require significant memory. Sparse tables and segment trees strike a balance by optimizing both space and query time.</li>
+        <li><strong>Precomputation:</strong> Many algorithms, like lookup tables and sparse tables, works on precomputing values for different ranges to execute queries fastly.</li>
+        <li><strong>Efficiency:</strong> The goal pf array query is to reduce time complexity from linear (O(n)) to logarithmic (O(log n)) or even constant time (O(1)).</li>
+        <li><strong>Space-Time Tradeoff:</strong> While lookup tables provide constant-time queries, they require very large  memory. Sparse tables and segment trees optimize this  both space and query time.</li>
         <li><strong>Dynamic and Static Data:</strong> Algorithms like segment trees and Fenwick trees handle dynamic datasets well, while sparse tables are suited for static datasets with no updates.</li>
     </ul>
     
@@ -300,7 +300,7 @@
     <h3>1. Lookup Tables</h3>
     <ul>
         <li>Precomputes results for all possible ranges.</li>
-        <li>Offers constant-time query access but uses significant space.</li>
+        <li>gives  constant-time query access but uses large space.</li>
         <li>Inefficient for dynamic datasets due to the need for complete recomputation after updates.</li>
     </ul>
     
@@ -330,8 +330,7 @@
         <li><strong>Usability:</strong> Enhanced user experience in apps and platforms where range queries are common.</li>
     </ul>
     
-    <p>For deeper understanding, the uploaded document provides details on specific structures, such as segment trees and lookup tables, along with illustrative examples of their construction and use cases.</p>
-</body>
+    
 </html>
 </body>
 </html>
