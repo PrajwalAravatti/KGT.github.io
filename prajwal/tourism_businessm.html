@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management with Merge Sort</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #8A2BE2;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* Content Section */
+        section {
+            background-color: #fff;
+            border: 1px solid #8A2BE2;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            margin-top: 1.5rem;
+            color: #8A2BE2;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section h3 {
+            color: #8A2BE2;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section h4 {
+            color: #555;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-top: 0.8rem;
+        }
+
+        /* List Styling */
+        ul {
+            margin-top: 1.2rem;
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Link Styling */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #8A2BE2;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #40E0D0;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section h3 {
+                font-size: 1.25rem;
+            }
+
+            section p, ul {
+                font-size: 1rem;
+            }
+
+            a {
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Proper and Efficient Management of Tourism</h1>
+        <p>Optimizing Resources through Efficient Algorithms</p>
+    </header>
+
+    <!-- Content Section -->
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Tourism is a critical driver of economic growth, cultural exchange, and urban development
+            in modern cities. By focusing on innovation, sustainability, and inclusivity, cities can design tourism systems that not only
+            attract visitors but also enrich the lives of residents and support long-term economic growth. Properly managing tourism through thoughtful
+            city design can transform challenges into opportunities, creating vibrant and thriving urban environments.
+        </p>
+
+        <h2>Steps for Managing Tourism</h2>
+        <h3>Identifying Popular Tourism Spots</h3>
+        <h4>Problem</h4>
+        <p>
+            For managing tourism effectively, one of the critical steps is to identify the most popular tourist spots in a city. 
+        </p>
+        <h4>Solution</h4>
+        <p>
+            We can do this by sorting them based on the number of visits they receive. This helps in optimizing resources, planning infrastructure, and prioritizing
+            promotional strategies for high-traffic areas. Sorting allows us to identify the spots requiring more attention, such as better crowd management.
+        </p>
+        <p>To handle the large datasets associated with city-wide tourism, merge sort is an excellent choice due to its:</p>
+        
+        <p><strong>We chose merge sort for this task due to its efficiency and stability. Merge sort is a divide-and-conquer algorithm that splits the data into smaller subarrays, sorts them, and merges them back in sorted order. There are several key reasons for choosing merge sort:</strong></p>
+
+        <p><strong>Efficiency:</strong> Merge sort has a time complexity of O(n log n), making it suitable for sorting large datasets, such as city-wide tourist visit records.</p>
+        
+        <p><strong>Stability:</strong> Merge sort preserves the order of equal elements, ensuring that spots with the same visit count remain in their original relative positions. This is useful for maintaining ties or secondary sorting criteria.</p>
+        
+        <p><strong>Applicability to Large Datasets:</strong> Merge sort is well-suited for external sorting, particularly when data doesn't fit into memory, as it processes data in chunks. This is beneficial for handling large-scale tourism datasets.</p>
+
+        <h4>Merge Sort Implementation in C++</h4>
+        <p>
+            Here is the implementation of Merge Sort for sorting tourism data in C++. You can view the code using the
+            link below:
+        </p>
+        <a href="prajwal/codes/tourism_businessm.cpp" download>Merge Sort Code</a>
+    </section>
+</body>
+
+</html>
