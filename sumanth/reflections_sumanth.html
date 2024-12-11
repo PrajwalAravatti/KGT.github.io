@@ -554,57 +554,45 @@
         
     </ul>
     <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Searching and String Matching Algorithms</title>
-  <style>
-    
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h2 {
-      color: #333;
-    }
-    p {
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching and String Matching Algorithms</title>
 </head>
 <body>
-  <h2>Searching and String Matching Algorithms</h2>
-  <p>
-    Searching and string matching algorithms are fundamental to computer science, underpinning a wide range of applications from text editors to bioinformatics. These algorithms are designed to efficiently locate patterns within larger texts or data structures.
-  </p>
+    <h1>Searching and String Matching Algorithms: A Deep Dive</h1>
+    <p>Searching and string matching algorithms are fundamental to computer science, underpinning a wide range of applications from text editors to bioinformatics. These algorithms are designed to efficiently locate patterns within larger texts or data structures.</p>
+    
+    <h2>Key Algorithms</h2>
 
-  <h3>Key Algorithms</h3>
-  <h4>Naive String Matching</h4>
-  <p>
-    * Simple and intuitive approach.
-    * Compares characters of the pattern with the text sequentially.
-    * Time complexity: O(mn), where m is the length of the pattern and n is the length of the text.
-  </p>
+    <h3>Naive String Matching:</h3>
+    <ul>
+        <li>Simple and intuitive approach.</li>
+        <li>Compares characters of the pattern with the text sequentially.</li>
+        <li>Time complexity: <code>O(mn)</code>, where <code>m</code> is the length of the pattern and <code>n</code> is the length of the text.</li>
+    </ul>
 
-  <h4>Knuth-Morris-Pratt (KMP) Algorithm</h4>
-  <p>
-    * Preprocesses the pattern to create a "prefix function" that helps in efficient pattern matching.
-    * Avoids redundant comparisons.
-    * Time complexity: O(m + n).
-  </p>
+    <h3>Knuth-Morris-Pratt (KMP) Algorithm:</h3>
+    <ul>
+        <li>Preprocesses the pattern to create a "prefix function" that helps in efficient pattern matching.</li>
+        <li>Avoids redundant comparisons.</li>
+        <li>Time complexity: <code>O(m + n)</code>.</li>
+    </ul>
 
-  <h4>Rabin-Karp Algorithm</h4>
-  <p>
-    * Uses hashing to quickly compare substrings of the text with the pattern.
-    * Can be optimized with rolling hash functions to reduce computation time.
-    * Time complexity: O(mn) in the worst case, but often performs better in practice.
-  </p>
+    <h3>Rabin-Karp Algorithm:</h3>
+    <ul>
+        <li>Uses hashing to quickly compare substrings of the text with the pattern.</li>
+        <li>Can be optimized with rolling hash functions to reduce computation time.</li>
+        <li>Time complexity: <code>O(mn)</code> in the worst case, but often performs better in practice.</li>
+    </ul>
 
-  <h4>Boyer-Moore Algorithm</h4>
-  <p>
-    * Uses a "bad character heuristic" and a "good suffix heuristic" to quickly skip large portions of the text.
-    * Highly efficient for large texts and long patterns.
-    * Time complexity: O(mn) in the worst case, but often linear in practice.
-  </p>
+    <h3>Boyer-Moore Algorithm:</h3>
+    <ul>
+        <li>Uses a "bad character heuristic" and a "good suffix heuristic" to quickly skip large portions of the text.</li>
+        <li>Highly efficient for large texts and long patterns.</li>
+        <li>Time complexity: <code>O(mn)</code> in the worst case, but often linear in practice.</li>
+    </ul>
 </body>
 </html>
 </body>
