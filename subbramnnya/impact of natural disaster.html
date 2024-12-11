@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transport management with Dijkstra</title>
+    <title>Water Management with Dijkstra</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* General Reset */
@@ -143,52 +143,52 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Easiest Transport Route Optimization</h1>
-        <p>Optimizing Routes through Efficient Algorithms for Easy Travel</p>
+        <h1>Water Management Route Optimization</h1>
+        <p>Optimizing Routes for Efficient Water Distribution</p>
     </header>
 
     <!-- Content Section -->
     <section>
-        <h1>Easiest Transport Route Optimization</h1>
+        <h1>Water Management Route Optimization</h1>
         <p>
-            Easiest transport route optimization is the process of finding the most convenient and least stressful path between two points. This approach focuses on factors that make the journey as easy as possible for the traveler, rather than simply optimizing for speed or fuel efficiency. Key factors include:
+            Water management route optimization is the process of finding the most efficient and effective path for water distribution. This approach focuses on minimizing water loss, maximizing efficiency, and ensuring access to clean water for all areas. Key factors include:
         </p>
         <ul>
-            <li><strong>Road Conditions:</strong> Smooth and well-maintained roads that minimize travel discomfort.</li>
-            <li><strong>Traffic Flow:</strong> Routes with less congestion for smoother travel.</li>
-            <li><strong>Accessibility:</strong> Routes that avoid obstacles such as construction zones or tolls.</li>
-            <li><strong>Travel Time:</strong> Quick routes that minimize waiting times at intersections or traffic lights.</li>
-            <li><strong>Scenic Routes:</strong> Paths that offer more pleasant views or calming environments.</li>
+            <li><strong>Pipeline Conditions:</strong> Well-maintained pipelines that minimize water loss.</li>
+            <li><strong>Water Flow:</strong> Routes with optimal water pressure and flow for efficient distribution.</li>
+            <li><strong>Accessibility:</strong> Routes that avoid obstructions such as construction zones or blocked pathways.</li>
+            <li><strong>Maintenance Time:</strong> Routes that minimize the time required for repairs or monitoring.</li>
+            <li><strong>Resource Efficiency:</strong> Paths that optimize the use of available resources such as energy for pumps.</li>
         </ul>
         <h2>How Dijkstra's Algorithm Is Used</h2>
         <p>
-            Dijkstra's algorithm is a classic approach for finding the shortest path in a graph. When adapted for easiest transport optimization, Dijkstra's algorithm can be used to minimize factors that lead to stressful or difficult travel. Instead of focusing on distance or time, we can prioritize ease of movement. Here's how it works:
+            Dijkstra's algorithm is a classic approach for finding the shortest path in a graph. When adapted for water management optimization, Dijkstra's algorithm can be used to minimize factors such as water loss, inefficient flow, and resource usage. Instead of focusing on traditional metrics like distance or time, we prioritize efficient water distribution. Here's how it works:
         </p>
         <h3>Graph Representation:</h3>
-        <p>The road network is represented as a graph, where:</p>
+        <p>The water distribution network is represented as a graph, where:</p>
         <ul>
-            <li><strong>Nodes</strong> represent locations (e.g., intersections, popular destinations).</li>
-            <li><strong>Edges</strong> represent roads between locations, each with a weight representing the ease of travel.</li>
+            <li><strong>Nodes</strong> represent locations (e.g., water tanks, distribution points, or consumer areas).</li>
+            <li><strong>Edges</strong> represent pipelines between locations, each with a weight representing the efficiency of water flow.</li>
         </ul>
         <h3>Edge Weights:</h3>
         <p>Instead of using traditional weights such as distance or time, we use weights based on factors like:</p>
         <ul>
-            <li>Road condition (e.g., smoothness or presence of potholes).</li>
-            <li>Traffic flow and congestion levels.</li>
-            <li>Travel time, considering signals and wait times.</li>
+            <li>Pipeline condition (e.g., material or age that may affect water loss).</li>
+            <li>Water flow capacity and pressure.</li>
+            <li>Maintenance costs and ease of access.</li>
         </ul>
         <h3>Algorithm Execution:</h3>
         <ul>
-            <li>The algorithm starts at the source node and explores the neighboring nodes.</li>
-            <li>At each step, it selects the path with the lowest cumulative "difficulty" or travel stress.</li>
-            <li>It continues until it finds the easiest route to the destination.</li>
+            <li>The algorithm starts at the source node (e.g., water source or treatment plant) and explores neighboring nodes.</li>
+            <li>At each step, it selects the path with the lowest cumulative inefficiency or resource usage.</li>
+            <li>It continues until it finds the most efficient water distribution path to the destination.</li>
         </ul>
         <h3>Output:</h3>
-        <p>The algorithm returns the route with the least travel difficulty, considering the assigned weights.</p>
+        <p>The algorithm returns the path with the least resource waste, considering the assigned weights for water management optimization.</p>
         
         <h4>Dijkstra's Algorithm Implementation in C++</h4>
         <p>
-            Here is the implementation of Dijkstra's algorithm in C++. You can view the code using the link below:
+            Here is the implementation of Dijkstra's algorithm for water management optimization in C++. You can view the code using the link below:
         </p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/subbramnnya/Dijkstra.cpp">Dijkstra's Code</a>
          
