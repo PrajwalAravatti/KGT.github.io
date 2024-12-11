@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management with Shortest Path Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #FF4500;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* Content Section */
+        section {
+            background-color: #fff;
+            border: 1px solid #FF4500;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            margin-top: 1.5rem;
+            color: #FF4500;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section h3 {
+            color: #FF4500;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section h4 {
+            color: #555;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-top: 0.8rem;
+        }
+
+        /* List Styling */
+        ul {
+            margin-top: 1.2rem;
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Link Styling */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #FF4500;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #40E0D0;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section h3 {
+                font-size: 1.25rem;
+            }
+
+            section p, ul {
+                font-size: 1rem;
+            }
+
+            a {
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Smart Waste Management System</h1>
+        <p>Optimizing Waste Collection with Shortest Path Algorithms</p>
+    </header>
+
+    <!-- Content Section -->
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Effective waste management is crucial for sustainable urban living. By leveraging technology, cities can optimize waste collection routes, reduce fuel consumption, and minimize environmental impact. Using shortest path algorithms, waste collection vehicles can determine the most efficient routes to collect waste from various locations in a city.
+        </p>
+
+        <h2>Steps for Efficient Waste Collection</h2>
+        <h3>Identifying Optimal Routes</h3>
+        <h4>Problem</h4>
+        <p>
+            Waste collection vehicles often face challenges in determining the shortest routes to cover all designated locations. This can lead to increased travel time, higher fuel consumption, and inefficiencies in the system.
+        </p>
+        <h4>Solution</h4>
+        <p>
+            To address this, shortest path algorithms like Dijkstra's Algorithm can be used. These algorithms help in identifying the most efficient route to cover all waste collection points, reducing operational costs and environmental impact.
+        </p>
+        <p>Key benefits of using shortest path algorithms:</p>
+        <ul>
+            <li><strong>Efficiency:</strong> Minimize travel distance and time, ensuring timely waste collection.</li>
+            <li><strong>Cost-effectiveness:</strong> Reduce fuel consumption and operational costs.</li>
+            <li><strong>Sustainability:</strong> Lower carbon emissions and environmental impact.</li>
+        </ul>
+
+        <h4>Dijkstra's Algorithm Implementation in Python</h4>
+        <p>
+            Below is a Python implementation of Dijkstra's Algorithm for finding the shortest path in a waste management system. You can view the code using the link below:
+        </p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/dijkstra_algorithm.py">Dijkstra's Algorithm Code</a>
+    </section>
+</body>
+
+</html>
 
