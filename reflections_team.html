@@ -5,121 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Members</title>
+    <link rel="stylesheet" href="stylereflect.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #f3f4f6, #e2e2e2);
-            color: #333;
-        }
-
-        nav {
-            background-color: #00bfff;
-            color: white;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-           border-bottom:5px solid  #000fff;
-        }
-
-        header {
-            background-color: #00bfff;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            font-family: 'india2023',sans-serif;
-            text-transform: uppercase;
-        }
-
-        main {
-            max-width: 850px;
-            margin: 30px auto;
-            padding: 25px;
-            background: #9ed9ed;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        h2 {
-            
-            color: #14060d;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            font-family: 'india2023',sans-serif;
-            text-transform: uppercase;
-        }
-
-        .team-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .team-list li {
-            margin: 15px 0;
-        }
-
-        .team-list a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #0e070a;
-            font-weight: 600;
-            border: 2px solid transparent;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .team-list a:hover {
-           
-            color: #000fff;
-            border: 2px solid #000fff;
-        }
-    </style>
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="projrct_intro.html">Project Overview</a></li>
+            <li><a href="project_intro.html">Project Overview</a></li>
             <li><a href="businesscases.html">Business Use Cases</a></li>
         </ul>
     </nav>
@@ -128,12 +22,20 @@
     </header>
     <main>
         <h2>Click on a Team Member to View Their Reflections</h2>
-        <ul class="team-list">
-            <li><a href="sumanth/reflections_sumanth.html" target="_blank">Sumanth Shet</a></li>
-            <li><a href="prajwal/refections_prajwal.html" target="_blank">Prajwal Aravatti</a></li>
-            <li><a href="mallikarjun/mallikarjun_reflect.html" target="_blank">Mallikarjun Patil</a></li>
-            <li><a href="subbramnnya/reflections.html" target="_blank">Subbramannya A T</a></li>
-        </ul>
+        <div class="team-container">
+            <div class="team-member">
+                <a href="sumanth/reflections_sumanth.html" target="_blank">Sumanth Shet</a>
+            </div>
+            <div class="team-member">
+                <a href="prajwal/reflections_prajwal.html" target="_blank">Prajwal Aravatti</a>
+            </div>
+            <div class="team-member">
+                <a href="mallikarjun/mallikarjun_reflect.html" target="_blank">Mallikarjun Patil</a>
+            </div>
+            <div class="team-member">
+                <a href="subbramnnya/reflections.html" target="_blank">Subbramannya A T</a>
+            </div>
+        </div>
     </main>
 </body>
 
