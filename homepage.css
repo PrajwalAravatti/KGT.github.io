@@ -36,7 +36,7 @@ header.main-header h1 {
 }
 
 header.secondary-header {
-    background-color: #872ddc; 
+    background-color: #872ddc;  
     color: #FFFFFF;
     padding: 1rem;
     text-align: center;
@@ -44,6 +44,8 @@ header.secondary-header {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
     margin-bottom: 2.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 header.secondary-header:hover {
@@ -53,8 +55,11 @@ header.secondary-header:hover {
 
 header.secondary-header nav {
     display: flex;
-    justify-content: center;
-    gap: 20px; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 header.secondary-header nav a {
@@ -66,7 +71,40 @@ header.secondary-header nav a {
     border: 2px solid transparent;
     border-radius: 10px; 
     background-color: #9630f6;
+    flex: 1; 
+    text-align: center;
 }
+
+header.secondary-header nav a:hover {
+    background-color: #7507f2b3; 
+    border: 2px solid #FFFFFF; 
+    color: #FFFFFF; 
+    border-radius: 15px 15px 15px 15px;
+}
+
+@media (max-width: 768px) {
+    header.secondary-header nav {
+        
+        gap: 10px;
+    }
+
+    header.secondary-header nav a {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    header.secondary-header nav {
+        flex-direction: row; 
+    }
+
+    header.secondary-header nav a {
+        width: auto; 
+    }
+}
+
 
 header.secondary-header nav a:hover {
     background-color: #7507f2b3; 
