@@ -5,19 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Use Cases</title>
     <style>
-        body {
+       body {
             font-family: 'Arial', sans-serif;
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
             line-height: 1.8;
             color: #333;
-            padding-left: 50px;
-            padding-right: 50px; 
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        header.main-header {
+            background-color: #8A2BE2; 
+            color: #FFFFFF;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-radius: 15px 15px 15px 15px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        
+        header.main-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.5rem;
+            color: #FFFFFF;
+        }
+        
+        header.secondary-header {
+            
+            margin-right: 50px;
+            background-color: #872ddc;  
+            color: #FFFFFF;
+            padding: 1rem;
+            padding-top: 0px;
+            text-align: center;
+            border-radius: 15px; 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+            margin-bottom: 2.5rem;
+            margin-top: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+        
+        header.secondary-header:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+        }
+        
+        header.secondary-header nav {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+            gap: 20px;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            
+
+        }
+        
+        header.secondary-header nav a {
+            color: #FFFFFF; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem; 
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            border-radius: 10px; 
+            background-color: #9630f6;
+            flex: 1; 
+            text-align: center;
+        }
+        
+        header.secondary-header nav a:hover {
+            background-color: #7507f2b3; 
+            border: 2px solid #FFFFFF; 
+            color: #FFFFFF; 
+            border-radius: 15px 15px 15px 15px;
+        }
+        
+        @media (max-width: 768px) {
+            header.secondary-header nav {
+                gap: 10px;
+            }
+        
+            header.secondary-header nav a {
+                font-size: 1.1rem;
+                padding: 0.8rem 1.5rem;
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            header.secondary-header nav {
+                flex-direction: row; 
+            }
+        
+            header.secondary-header nav a {
+                width: auto; 
+            }
+        }
+        
+        
+        header.secondary-header nav a:hover {
+            background-color: #7507f2b3; 
+            border: 2px solid #FFFFFF; 
+            color: #FFFFFF; 
+            border-radius: 15px 15px 15px 15px;
         }
         
         header {
-            background-color: #2a628f;
+            background-color: #872ddc; /* Dark Purple */
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -40,7 +141,7 @@
         }
         
         h1 {
-            color: #6541f4;
+            color: #6541f4; /* Lighter Purple */
             text-align: center;
             font-size: 2.5em;
             letter-spacing: 1.2px;
@@ -49,7 +150,7 @@
         }
         
         h2 {
-            color: #4a41f4;
+            color: #9630f6; /* Medium Purple */
             font-size: 1.8em;
             margin-top: 20px;
             border-bottom: 2px solid #eaeaea;
@@ -93,28 +194,30 @@
         footer a:hover {
             text-decoration: underline;
         }
+        
         .sdg {
-            color: #f441b8;
+            color: #f441b8; 
             font-size: 18px;
         }
+        
         /* Link Styling */
         a {
-        display: inline-block;
-        text-decoration: none; /* Removes underline */
-        color: white;
-        padding: 12px 20px;
-        border-radius: 6px;
-        font-size: 1rem;
-        margin-top: 1.5rem;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        text-align: center;
-}
-
-    /* Hover Effect */
-       a:hover {
-          background-color: #40e0d023;
-          transform: scale(1.05);
-       }
+            display: inline-block;
+            text-decoration: none; 
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+        
+        /* Hover Effect */
+        a:hover {
+            background-color: #40e0d023; 
+            transform: scale(1.05);
+        }
    
         
     </style>
