@@ -168,7 +168,7 @@
         }
 
         .graph1 img {
-            max-width: 500px;
+            max-width: 100%;
             margin: 1rem auto 2rem auto;
             border: 1px solid #8A2BE2;
             border-radius: 10px;
@@ -180,6 +180,18 @@
             font-style: italic;
             color: #555;
             margin-bottom: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .graph1 img {
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .graph-caption {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
         }
         header.secondary-header {
             margin-right: 50px;
