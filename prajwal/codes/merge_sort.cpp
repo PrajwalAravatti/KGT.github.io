@@ -1,16 +1,21 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
-void Merge(const vector<int> &B, const vector<int> &C, vector<int> &A) {
+struct Location {
+    string name;
+    int visits;
+};
+
+void Merge(const vector<Location> &B, const vector<Location> &C, vector<Location> &A) {
     int p = B.size();
     int q = C.size();
     int i = 0, j = 0, k = 0;
 
-    // Compare elements from B and C and merge them into array A
     while (i < p && j < q) {
-        if (B[i] <= C[j]) {
+        if (B[i].visits >= C[j].visits) { // Sort in descending order
             A[k] = B[i];
             i++;
         } 
@@ -20,20 +25,19 @@ void Merge(const vector<int> &B, const vector<int> &C, vector<int> &A) {
         }
         k++;
     }
-    // Copy remaining elements of B, if any
     while (i < p) {
         A[k] = B[i];
         i++;
         k++;
     }
-    // Copy remaining elements of C, if any
     while (j < q) {
         A[k] = C[j];
         j++;
         k++;
     }
 }
-void MergeSort(vector<int> &A) {
+
+void MergeSort(vector<Location> &A) {
     int n = A.size();
     
     if (n <= 1) {
@@ -42,35 +46,40 @@ void MergeSort(vector<int> &A) {
 
     int mid = n / 2;
 
-    // Divide the array into two halves
-    vector<int> B(A.begin(), A.begin() + mid);
-    vector<int> C(A.begin() + mid, A.end());
+    vector<Location> B(A.begin(), A.begin() + mid);
+    vector<Location> C(A.begin() + mid, A.end());
 
-    // Recursively sort both halves
     MergeSort(B);
     MergeSort(C);
 
-    // Merge the sorted halves into the original array
     Merge(B, C, A);
 }
 
 int main() {
-    vector<int> A = {38, 27, 43, 3, 9, 82, 10};
+    vector<Location> locations = {
+        {"Shani Deva Temple", 5000},
+        {"Sunset Park", 3000},
+        {"Summit Mountains", 7000},
+        {"City Museum", 1500},
+        {"Zoo/Aquarium", 4000},
+        {"Forest Area", 6000},
+        {"Crystal Lake", 4000},
+        {"Historical Site", 500}
+    };
 
-    cout << "Original Array: ";
-    for (int num : A) {
-        cout << num << "   ";
+    cout << "Original Locations and Visits: " << endl;
+    for (const auto &loc : locations) {
+        cout << loc.name << " - " << loc.visits << endl;
     }
     cout << endl;
 
-    MergeSort(A);
+    MergeSort(locations);
 
-    cout << "Sorted Array: ";
-    for (int num : A) {
-        cout << num << "   ";
+    cout << "Sorted Locations and Visits: " << endl;
+    for (const auto &loc : locations) {
+        cout << loc.name << " - " << loc.visits << endl;
     }
     cout << endl;
 
     return 0;
 }
-
