@@ -135,40 +135,130 @@
 </head>
 
 <body>
-    <header>
-        <h1>Smart Waste Management System</h1>
-        <p>Optimizing Waste Collection with Shortest Path Algorithms</p>
+<header>
+    <h1>Smart Waste Management</h1>
     </header>
 
     <section>
-        <h2>Introduction</h2>
+        <h2>1. Inefficient Waste Collection</h2>
+        <h4>Problem:</h4>
         <p>
-            Effective waste management is crucial for sustainable urban living. By leveraging technology, cities can optimize waste collection routes, reduce fuel consumption, and minimize environmental impact. Using shortest path algorithms, waste collection vehicles can determine the most efficient routes to collect waste from various locations in a city.
+            Waste collection trucks often follow non-optimal routes, wasting fuel and time, while some bins remain overflowing.
         </p>
 
-        <h2>Steps for Efficient Waste Collection</h2>
-        <h3>Identifying Optimal Routes</h3>
-        <h4>Problem</h4>
-        <p>
-            Waste collection vehicles often face challenges in determining the shortest routes to cover all designated locations. This can lead to increased travel time, higher fuel consumption, and inefficiencies in the system.
-        </p>
-        <h4>Solution</h4>
-        <p>
-            To address this, shortest path algorithms like Dijkstra's Algorithm can be used. These algorithms help in identifying the most efficient route to cover all waste collection points, reducing operational costs and environmental impact.
-        </p>
-        <p>Key benefits of using shortest path algorithms:</p>
+        <h4>Solution:</h4>
         <ul>
-            <li><strong>Efficiency:</strong> Minimize travel distance and time, ensuring timely waste collection.</li>
-            <li><strong>Cost-effectiveness:</strong> Reduce fuel consumption and operational costs.</li>
-            <li><strong>Sustainability:</strong> Lower carbon emissions and environmental impact.</li>
+            <li>Implement route optimization algorithms (e.g., Dijkstra's or Floyd-Warshall) to calculate the shortest and most efficient paths for collection.</li>
+            <li>Use GPS tracking and real-time updates to dynamically adjust routes based on bin status.</li>
         </ul>
 
-        <h4>Dijkstra's Algorithm Implementation in C++</h4>
+        <h4>Reason for Solution with Used Algorithm:</h4>
         <p>
-            Below is a C++ implementation of Dijkstra's Algorithm for finding the shortest path in a waste management system. You can view the code using the link below:
+            Dijkstra's Algorithm is used to find the shortest path from a starting point to all other waste collection points, minimizing travel time and fuel consumption.
+         <p>Effeciency:O(|E|log|V|)</p>
+        <p>
+            Here is the implementation of Dijkstra's Algorithm in C++. You can view the code using the
+            link below:
         </p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/mallikarjun/Dijkstra's_Algorithm.cpp">Dijkstra's Algorithm Code</a>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Dijkstra's Code</a>
+            <br>
+            Floyd-Warshall Algorithm is ideal when multiple trucks are serving overlapping areas, as it computes the shortest paths between all pairs of locations, ensuring optimal coordination.
+     <p>Effeciency:O(V^3)</p>
+        <p>
+            Here is the implementation of Floyd-Warshall Algorithm in C++. You can view the code using the
+            link below:
+        </p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Floyd-Warshall code</a>
+    </p>
+
+        <h4>Impact:</h4>
+        <p>Reduced operational costs, faster collection, and fewer overflowing bins.</p>
     </section>
-</body>
+
+    <section>
+        <h2>2. Overflowing Bins and Missed Pickups</h2>
+        <h4>Problem:</h4>
+        <p>
+            Overflowing bins cause littering, odors, and health hazards due to untimely waste collection.
+        </p>
+
+        <h4>Solution:</h4>
+        <ul>
+            <li>Install smart sensors in bins to monitor fill levels and alert the management system when nearing capacity.</li>
+            <li>Integrate a real-time monitoring system using AVL Trees to prioritize bins that are close to overflowing.</li>
+        </ul>
+
+        <h4>Reason for Solution with Used Algorithm:</h4>
+        <p>
+            AVL Trees are used to efficiently maintain an ordered set of bins, allowing quick retrieval and prioritization of bins that are near full capacity. AVL Trees provide fast lookups, ensuring timely pickups.
+        </p>
+        <p>Effeciency:O(log n)</p>
+        <p>
+            Here is the implementation of AVL Trees in C++. You can view the code using the
+            link below:
+        </p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">AVL Trees code</a>
+
+        <h4>Impact:</h4>
+        <p>Timely waste collection, cleaner streets, and improved public hygiene.</p>
+    </section>
+
+    <section>
+        <h2>3. Lack of Proper Waste Segregation</h2>
+        <h4>Problem:</h4>
+        <p>
+            Mixed waste leads to inefficient recycling and disposal, increasing landfill use.
+        </p>
+
+        <h4>Solution:</h4>
+        <ul>
+            <li>Deploy automated sorting systems with image recognition and sorting algorithms like Merge Sort to segregate waste efficiently at processing centers.</li>
+            <li>Educate citizens about waste segregation through awareness programs and incentives.</li>
+        </ul>
+
+        <h4>Reason for Solution with Used Algorithm:</h4>
+        <p>
+            Merge Sort is used for efficiently sorting waste materials (e.g., plastics, paper, metals). Its stable and divide-and-conquer approach ensures large datasets are handled effectively, maintaining order and efficiency in automated systems.
+        </p>
+         <p>Effeciency:O(nlogn)</p>
+         <p>
+            Here is the implementation of Merge sort in C++. You can view the code using the
+            link below:
+        </p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Merge sort code</a>
+
+        <h4>Impact:</h4>
+        <p>Higher recycling rates, reduced landfill waste, and better resource utilization.</p>
+    </section>
+
+    <section>
+        <h2>4. Lack of Data for Predictive Planning</h2>
+        <h4>Problem:</h4>
+        <p>
+            Without data, cities struggle to plan for future waste generation, leading to resource mismanagement.
+        </p>
+
+        <h4>Solution:</h4>
+        <ul>
+            <li>Utilize data analytics and predictive algorithms (e.g., Hashing for grouping historical data) to predict waste generation patterns.</li>
+            <li>Create a centralized database for continuous monitoring and trend analysis.</li>
+        </ul>
+
+        <h4>Reason for Solution with Used Algorithm:</h4>
+        <p>
+            Hashing helps efficiently group and organize historical waste data, making it easy to analyze patterns.
+            <br>
+            Linear Regression is used to predict future waste generation based on existing data trends, ensuring proactive planning.
+        </p>
+        <p>Effeciency:O(1)</p>
+         <p>
+            Here is the implementation of Hashing code in C++. You can view the code using the
+            link below:
+        </p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Hasing code</a>
+
+        <h4>Impact:</h4>
+        <p>Proactive resource allocation, reduced waste overflow, and long-term sustainability.</p>
+    </section>
 
 </html>
