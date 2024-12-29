@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #2c3e50, #3e2723);
             color: white;
-            padding: 20px;
+            padding: 23px;
         }
         h1 {
             text-align: center;
@@ -67,25 +67,9 @@
     <h3>Providing smart parking management systems that use IoT sensors and AI to optimize parking space usage and reduce traffic congestion.</h3>
     <h3>Revenue Model: Pay-per-use, subscription fees for parking services, and licensing of technology.</h3>
     </section>
-    <section>
-        <h2>1. Penalty for Parking Violations</h2>
-        <h3>Problem:</h3>
-        <p>When people park illegally or stay too long, how can we catch them and issue fines efficiently?</p>
-        <h3>Solution:</h3>
-        <p>We use a <strong>Hashing</strong> system to store records of parking violations and check quickly if a driver has broken the rules.</p>
-        <h4>Reason for Solution (with Used Algorithm):</h4>
-        <p><strong>Hashing</strong> allows us to check violations in <strong>constant time (O(1))</strong>, so it’s fast and helps issue fines without delays.</p>
-        <h3>Impact:</h3>
-        <p>Drivers who break the rules are caught quickly, and fines are issued fast. This helps maintain parking order and discourages violations.</p>
-        <h3>Time Complexity:</h3>
-        <p><strong>O(1)</strong> (on average) because we can check violations instantly.</p>
-        <h3>Space Complexity:</h3>
-        <p><strong>O(n)</strong> where n is the number of parking violations stored.</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/hash_code.cpp">Hashing Code</a>
-    </section>
 
     <section>
-        <h2>2. Finding the Nearest Available Parking Spot</h2>
+        <h2>Finding the Nearest Available Parking Spot</h2>
         <h3>Problem:</h3>
         <p>Drivers waste time circling around looking for parking spots, creating traffic congestion.</p>
         <h3>Solution:</h3>
@@ -98,11 +82,11 @@
         <p><strong>O(E log V)</strong>, where E is the number of edges (roads) and V is the number of vertices (parking spots).</p>
         <h3>Space Complexity:</h3>
         <p><strong>O(V + E)</strong>, where V is the number of parking spots and E is the number of road connections.</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/prims_code.cpp">Prim's Code</a>
+        <a href="mallikarjun/codes/Prim’s.cpp">Prim's Code</a>
     </section>
 
     <section>
-        <h2>3. Finding the Right Parking Spot for Your Vehicle</h2>
+        <h2> Finding the Right Parking Spot for Your Vehicle</h2>
         <h3>Problem:</h3>
         <p>How do we quickly find the right parking spot for specific vehicle types (e.g., electric vehicles, compact cars)?</p>
         <h3>Solution:</h3>
@@ -115,11 +99,11 @@
         <p><strong>O(m)</strong> for search, where m is the length of the vehicle type string.</p>
         <h3>Space Complexity:</h3>
         <p><strong>O(n * m)</strong>, where n is the number of parking spots and m is the average length of the vehicle type string.</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/trie_code.cpp">Trie Code</a>
+        <a href="mallikarjun/codes/Trie .cpp">Trie Code</a>
     </section>
 
     <section>
-        <h2>4. Allocating Parking Spots to Multiple Vehicles</h2>
+        <h2>Allocating Parking Spots to Multiple Vehicles</h2>
         <h3>Problem:</h3>
         <p>How can we allocate parking spots efficiently to multiple vehicles at the same time, avoiding overlap?</p>
         <h3>Solution:</h3>
@@ -132,7 +116,7 @@
         <p><strong>O(α(n))</strong>, where α(n) is the inverse Ackermann function, which is nearly constant for practical input sizes.</p>
         <h3>Space Complexity:</h3>
         <p><strong>O(n)</strong>, where n is the number of parking spots.</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/union_find_code.cpp">Union-Find Code</a>
+        <a href="mallikarjun/codes/Union-Find.cpp">Union-Find Code</a>
     </section>
 </body>
 </html>
