@@ -1,12 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
 struct Edge {
     int u, v, weight;
 };
-void Union1(vector<int> &arr, int n, int u, int v) {
+
+void unionSets(vector<int> &arr, int n, int u, int v) {
     int temp = arr[u];
     for (int i = 0; i < n; i++) {
         if (arr[i] == temp) {
@@ -14,7 +16,8 @@ void Union1(vector<int> &arr, int n, int u, int v) {
         }
     }
 }
-int find1(vector<int> &arr, int u, int v) {
+
+int findSet(vector<int> &arr, int u, int v) {
     return arr[u] == arr[v];
 }
 
@@ -44,6 +47,7 @@ void mergeVectors(vector<Edge> &B, vector<Edge> &C, vector<Edge> &A) {
         k++;
     }
 }
+
 void mergeSort(vector<Edge> &A) {
     int n = A.size();
     if (n <= 1) {
@@ -60,31 +64,32 @@ void mergeSort(vector<Edge> &A) {
 
     mergeVectors(B, C, A);
 }
+
 vector<Edge> kruskalMST(vector<Edge> &edges, vector<int> &arr, int n) {
     vector<Edge> mst;
     int n1 = edges.size();
     for (int i = 0; i < n1; i++) {
         int u = edges[i].u;
         int v = edges[i].v;
-        if (!find1(arr, u, v)) {
+        if (!findSet(arr, u, v)) {
             mst.push_back(edges[i]);
-            Union1(arr, n, u, v);
+            unionSets(arr, n, u, v);
         }
     }
     return mst;
 }
 
 int main() {
+    vector<string> locations = {"Water Source 0", "Reservoir 1", "Reservoir 2", "Reservoir 3", "Reservoir 4", "Reservoir 5", "Reservoir 6", "Reservoir 7"};
     vector<vector<int>> graph = {
-        {0, 8, 0, 0, 0, 0, 0, 16, 0},
-        {8, 0, 16, 0, 0, 0, 0, 22, 0},
-        {0, 16, 0, 14, 0, 8, 0, 0, 4},
-        {0, 0, 14, 0, 18, 28, 0, 0, 0},
-        {0, 0, 0, 18, 0, 20, 0, 0, 0},
-        {0, 0, 8, 0, 20, 0, 4, 0, 0},
-        {0, 0, 0, 0, 0, 12, 0, 2, 12},
-        {16, 22, 0, 0, 0, 0, 2, 0, 14},
-        {0, 0, 4, 0, 0, 0, 12, 14, 0}
+        {0, 105, 65, 80, 0, 0, 0, 0},
+        {105, 0, 45, 0, 0, 40, 0, 100},
+        {65, 45, 0, 50, 60, 30, 0, 0},
+        {80, 0, 50, 0, 40, 28, 0, 0},
+        {0, 0, 60, 40, 0, 0, 70, 0},
+        {0, 35, 30, 0, 0, 0, 55, 40},
+        {0, 0, 0, 0, 70, 55, 0, 90},
+        {0, 100, 0, 0, 0, 40, 90, 0},
     };
 
     vector<Edge> edges;
@@ -110,14 +115,14 @@ int main() {
     cout << "\nEdges and their weights:\n";
     int n2 = edges.size();
     for (int i = 0; i < n2; i++) {
-        cout << "(" << edges[i].u << ", " << edges[i].v << ") --> " << edges[i].weight << "\n";
+        cout << "(" << locations[edges[i].u] << ", " << locations[edges[i].v] << ") --> " << edges[i].weight << "\n";
     }
 
     cout << "\nEdges in the MST:\n";
     int m = mst.size();
     int totalCost = 0;
     for (int i = 0; i < m; i++) {
-        cout << "(" << mst[i].u << ", " << mst[i].v << ") --> " << mst[i].weight << "\n";
+        cout << "(" << locations[mst[i].u] << ", " << locations[mst[i].v] << ") --> " << mst[i].weight << "\n";
         totalCost += mst[i].weight;
     }
 
