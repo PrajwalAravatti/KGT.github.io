@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourism Management with Merge Sort</title>
+    <title></title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* General Reset */
@@ -140,42 +140,83 @@
     </style>
 </head>
 
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Smart traffic management system</h1>
-        
-    </header>
+    <h1>Smart Traffic Management System</h1>
+    <p>Smart traffic management systems in smart cities aim to optimize traffic flow, reduce congestion, and enhance safety. Below is an explanation of how data structures and Kruskal’s algorithm are utilized in these systems:</p>
+    
+    <h2>1. Data Structures in Smart Traffic Management Systems</h2>
+    <ul>
+        <li>
+            <strong>Graph Data Structures:</strong> Roads and intersections are represented as a weighted graph.
+            <ul>
+                <li><strong>Nodes:</strong> Represent intersections.</li>
+                <li><strong>Edges:</strong> Represent roads connecting intersections.</li>
+                <li><strong>Weights:</strong> Represent traffic density, travel time, or distance.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Priority Queues:</strong> Used to prioritize tasks such as finding the shortest route or selecting the least congested path.
+        </li>
+        <li>
+            <strong>Disjoint Set (Union-Find):</strong> Helps manage connected components of a graph and prevents cycles in Kruskal’s algorithm.
+        </li>
+         <strong>Merge Sort:</strong> Helps to sort the edges by weight.
+        <li>
+            <strong>Dynamic Arrays/Hash Maps:</strong> Store dynamic data like traffic signals vehicle density.
+        </li>
+    </ul>
 
-    <!-- Content Section -->
-    <section>
-      
-           
-<body>
-    <div class="content">
-        <h1>Smart Traffic Management Using Kruskal’s Algorithm</h1>
-        
-        <p><strong>Smart Traffic Management</strong> refers to the use of advanced technologies and algorithms to optimize the flow of traffic, reduce congestion, and improve road safety in urban areas. This can be achieved through real-time data analysis, adaptive traffic signal systems, and efficient route planning.</p>
+    <h2>2. Kruskal’s Algorithm in Smart Traffic Management</h2>
+    <p>Kruskal’s algorithm finds the Minimum Spanning Tree (MST) of a graph. It can optimize traffic systems by identifying routes with minimal congestion or maintenance costs.</p>
+    
+    <h3>Steps in Kruskal’s Algorithm</h3>
+    <ol>
+        <li><strong>Sort Edges by Weight:</strong> Arrange roads by increasing traffic congestion or travel time.</li>
+        <li><strong>Initialize Disjoint Sets:</strong> Use a union-find data structure to manage connectivity.</li>
+        <li><strong>Add Edges to MST:</strong> Select the smallest edge that does not form a cycle.</li>
+        <li><strong>Repeat:</strong> Continue until all intersections are connected.</li>
+    </ol>
 
-        <h2>Using Kruskal's Algorithm:</h2>
-        <p><strong>Graph Representation:</strong> The city's traffic network is modeled as a graph, with intersections as nodes and roads as edges. Each edge is weighted based on traffic factors like travel time or congestion.</p>
-        <p><strong>Kruskal’s Algorithm:</strong> The algorithm is applied to find the <strong>Minimum Spanning Tree (MST)</strong> of the traffic network, connecting all key intersections with the minimum total weight (ex, minimal congestion or travel time).</p>
-        <p><strong>Optimization:</strong> By selecting the least costly paths (in terms of time or congestion), Kruskal's algorithm ensures optimal routing and traffic flow across the city.</p>
-
-        <h2>Advantages:</h2>
-        <ul>
-            <li><strong>Cost Efficiency:</strong> Minimizes overall travel time and congestion, reducing fuel consumption and operational costs.</li>
-            <li><strong>Improved Traffic Flow:</strong> By optimizing the network, it helps reduce bottlenecks and ensures smoother traffic movement.</li>
-            <li><strong>Scalability:</strong> Can be applied to both small and large cities, optimizing traffic networks efficiently as the city grows.</li>
-            <li><strong>Simple Implementation:</strong> Kruskal's algorithm is straightforward, making it easy to implement in existing traffic management systems.</li>
-        </ul>
+    <h3>Application Example</h3>
+    <div class="highlight">
+        <p><strong>Scenario:</strong> A city has multiple routes with varying congestion levels.</p>
+        <p><strong>Goal:</strong> Find the least congested route layout to connect all major intersections.</p>
+        <p><strong>Implementation:</strong>  Kruskal’s algorithm to minimize  the overall traffic congestion .</p>
     </div>
 
-    <div class="footer">
-        <p>Smart Traffic Management | Powered by Kruskal’s Algorithm</p>
-    </div>
-
-        
+    <h2>3. Benefits in Smart Cities</h2>
+    <ul>
+        <li><strong>Efficient Traffic Flow:</strong> Reduces travel time and congestion.</li>
+        <li><strong>Cost Optimization:</strong> Minimizes infrastructure.</li>
+        <li><strong>Real-time Adaptability:</strong> </li>
+    </ul>
+</body>
+</html>
 
 </body>
 </html>
