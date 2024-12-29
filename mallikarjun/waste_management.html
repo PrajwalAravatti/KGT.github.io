@@ -1,137 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Waste Management with Shortest Path Algorithm</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Affordable Housing Development Solutions</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(to bottom, #000, #fff);
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            background-color: #FF4500;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, black, white);
             color: white;
-            padding: 2rem;
+            padding: 20px;
+        }
+        h1 {
             text-align: center;
-            border-radius: 12px;
-            margin-bottom: 2.5rem;
+            color: #fff;
+            font-size: 36px;
         }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
+        h2 {
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 10px;
         }
-
-        header p {
-            font-size: 1.25rem;
-            font-style: italic;
-            margin-top: 0.5rem;
+        h3 {
+            font-size: 24px;
+            color: #f1c40f;
+            margin-bottom: 10px;
         }
-
-        section {
-            background-color: rgba(255, 255, 255, 0.85);
-            border: 1px solid #FF4500;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2.5rem;
+        h4 {
+            font-size: 18px;
+            color: #ecf0f1;
+            margin-bottom: 15px;
         }
-
-        h1, h2, h3, h4 {
-            color: #FF4500;
-            text-align: center;
+        .container {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
         }
-
-        section h2 {
-            margin-top: 1.5rem;
-            font-size: 2rem;
+        .problem, .solution, .reason, .impact, .time-complexity, .space-complexity {
+            margin-bottom: 15px;
+            font-size: 18px;
         }
-
-        section h3 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        section h4 {
-            color: #555;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-            font-style: italic;
-        }
-
-        section p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #555;
-            margin-top: 0.8rem;
-        }
-
-        ul {
-            margin-top: 1.2rem;
-            margin-left: 1.5rem;
-            list-style-type: disc;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-
         a {
-            display: inline-block;
+            color: #3498db;
             text-decoration: none;
-            background-color: #FF4500;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-size: 1rem;
-            margin-top: 1.5rem;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            text-align: center;
+            font-size: 35px; 
+            padding: 12px;
+            background-color: #2c3e50;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 2px solid #3498db;
+            background-color: skyblue;
         }
-
         a:hover {
-            background-color: #40E0D0;
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            section h2 {
-                font-size: 1.5rem;
-            }
-
-            section h3 {
-                font-size: 1.25rem;
-            }
-
-            section p, ul {
-                font-size: 1rem;
-            }
-
-            a {
-                padding: 10px 18px;
-            }
+            background-color: #34495e;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -140,15 +64,14 @@
     <header>
         <h1>Smart Waste Management</h1>
     </header>
+
     <h2>Using IoT sensors and AI to optimize waste collection, recycling, and disposal, reducing landfill use and improving city cleanliness.</h2>
     <h2>Revenue Model: Subscription for waste management services, product sales (smart bins, recycling machines).</h2>
 
     <section>
         <h2>1. Inefficient Waste Collection</h2>
         <h4>Problem:</h4>
-        <p>
-            Waste collection trucks often follow non-optimal routes, wasting fuel and time, while some bins remain overflowing.
-        </p>
+        <p>Waste collection trucks often follow non-optimal routes, wasting fuel and time, while some bins remain overflowing.</p>
 
         <h4>Solution:</h4>
         <ul>
@@ -157,15 +80,13 @@
         </ul>
 
         <h4>Reason for Solution with Used Algorithm:</h4>
-        <p>
-            Dijkstra's Algorithm is used to find the shortest path from a starting point to all other waste collection points, minimizing travel time and fuel consumption.
-            <p>Efficiency: O(|E|log|V|)</p>
-            <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Dijkstra's Code</a>
-            <br>
-            Floyd-Warshall Algorithm is ideal when multiple trucks are serving overlapping areas, as it computes the shortest paths between all pairs of locations, ensuring optimal coordination.
-            <p>Efficiency: O(V^3)</p>
-            <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Floyd-Warshall Code</a>
-        </p>
+        <p>Dijkstra's Algorithm is used to find the shortest path from a starting point to all other waste collection points, minimizing travel time and fuel consumption.</p>
+        <p>Efficiency: O(|E|log|V|)</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Dijkstra's Code</a>
+        
+        <p>Floyd-Warshall Algorithm is ideal when multiple trucks are serving overlapping areas, as it computes the shortest paths between all pairs of locations, ensuring optimal coordination.</p>
+        <p>Efficiency: O(V³)</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Floyd-Warshall Code</a>
 
         <h4>Impact:</h4>
         <p>Reduced operational costs, faster collection, and fewer overflowing bins.</p>
@@ -174,9 +95,7 @@
     <section>
         <h2>2. Overflowing Bins and Missed Pickups</h2>
         <h4>Problem:</h4>
-        <p>
-            Overflowing bins cause littering, odors, and health hazards due to untimely waste collection.
-        </p>
+        <p>Overflowing bins cause littering, odors, and health hazards due to untimely waste collection.</p>
 
         <h4>Solution:</h4>
         <ul>
@@ -185,9 +104,7 @@
         </ul>
 
         <h4>Reason for Solution with Used Algorithm:</h4>
-        <p>
-            AVL Trees are used to efficiently maintain an ordered set of bins, allowing quick retrieval and prioritization of bins that are near full capacity. AVL Trees provide fast lookups, ensuring timely pickups.
-        </p>
+        <p>AVL Trees are used to efficiently maintain an ordered set of bins, allowing quick retrieval and prioritization of bins that are near full capacity. AVL Trees provide fast lookups, ensuring timely pickups.</p>
         <p>Efficiency: O(log n)</p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">AVL Tree Code</a>
 
@@ -198,9 +115,7 @@
     <section>
         <h2>3. Lack of Proper Waste Segregation</h2>
         <h4>Problem:</h4>
-        <p>
-            Mixed waste leads to inefficient recycling and disposal, increasing landfill use.
-        </p>
+        <p>Mixed waste leads to inefficient recycling and disposal, increasing landfill use.</p>
 
         <h4>Solution:</h4>
         <ul>
@@ -209,9 +124,7 @@
         </ul>
 
         <h4>Reason for Solution with Used Algorithm:</h4>
-        <p>
-            Merge Sort is used for efficiently sorting waste materials (e.g., plastics, paper, metals). Its stable and divide-and-conquer approach ensures large datasets are handled effectively, maintaining order and efficiency in automated systems.
-        </p>
+        <p>Merge Sort is used for efficiently sorting waste materials (e.g., plastics, paper, metals). Its stable and divide-and-conquer approach ensures large datasets are handled effectively, maintaining order and efficiency in automated systems.</p>
         <p>Efficiency: O(n log n)</p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Merge Sort Code</a>
 
@@ -222,9 +135,7 @@
     <section>
         <h2>4. Lack of Data for Predictive Planning</h2>
         <h4>Problem:</h4>
-        <p>
-            Without data, cities struggle to plan for future waste generation, leading to resource mismanagement.
-        </p>
+        <p>Without data, cities struggle to plan for future waste generation, leading to resource mismanagement.</p>
 
         <h4>Solution:</h4>
         <ul>
@@ -233,11 +144,8 @@
         </ul>
 
         <h4>Reason for Solution with Used Algorithm:</h4>
-        <p>
-            Hashing helps efficiently group and organize historical waste data, making it easy to analyze patterns.
-            <br>
-            Linear Regression is used to predict future waste generation based on existing data trends, ensuring proactive planning.
-        </p>
+        <p>Hashing helps efficiently group and organize historical waste data, making it easy to analyze patterns.</p>
+        <p>Linear Regression is used to predict future waste generation based on existing data trends, ensuring proactive planning.</p>
         <p>Efficiency: O(1)</p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Hashing Code</a>
 
@@ -246,5 +154,4 @@
     </section>
 
 </body>
-
 </html>
