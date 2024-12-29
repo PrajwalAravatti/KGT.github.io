@@ -118,5 +118,30 @@
         <p><strong>O(n)</strong>, where n is the number of parking spots.</p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/mallikarjun/codes/Union-Find.cpp">Union-Find Code</a>
     </section>
+    
+     <section>
+        <h2>Finding Available Parking in Real-Time in a Large Parking Area</h2>
+        <h3>Problem:</h3>
+        <p>In large, multi-level parking garages or open-air lots, it is often challenging to monitor real-time availability of parking spaces across different areas. This leads to unnecessary delays and frustration for drivers searching for available parking spots.</p>
+        <h3>Solution:</h3>
+        <p>Use a <strong>Segment Tree</strong> to divide the parking area into segments (e.g., floors, sections, or zones) and store information about the number of available spaces in each segment. This data structure allows for efficient updates and range queries, enabling real-time tracking of parking availability.</p>
+        <h4>Reason for Solution (with Used Algorithm):</h4>
+        <p><strong>Segment Tree:</strong>
+        <ul>
+            <li>Allows efficient management of parking space availability across large parking areas.</li>
+            <li>Facilitates quick range queries to determine available parking spaces in specific segments.</li>
+            <li>Ensures fast updates when a parking space is occupied or vacated.</li>
+        </ul>
+        Time Complexity of range queries and updates is <strong>O(log n)</strong>, making it well-suited for real-time operations.</p>
+        <h3>Impact:</h3>
+        <p>Real-Time Updates: Drivers can access up-to-date information about parking availability, minimizing time spent searching for a spot.<br>
+        Efficient Parking Management: Segmentation of parking areas enables organized tracking, improving overall parking system efficiency.</p>
+        <h3>Time Complexity:</h3>
+        <p><strong>Query Operation:</strong> O(log n)<br>
+        <strong>Update Operation:</strong> O(log n)</p>
+        <h3>Space Complexity:</h3>
+        <p><strong>O(n):</strong> To store the Segment Tree structure, where <em>n</em> represents the number of parking sections or spaces.</p>
+     <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/mallikarjun/codes/Union-Find.cpp">Union-Find Code</a>
+     </section>
 </body>
 </html>
