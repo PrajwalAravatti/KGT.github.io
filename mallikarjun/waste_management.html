@@ -17,7 +17,7 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #87CEEB;
+            background: linear-gradient(to bottom, #000, #fff);
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
@@ -44,7 +44,7 @@
         }
 
         section {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.85);
             border: 1px solid #FF4500;
             border-radius: 12px;
             padding: 2rem;
@@ -52,15 +52,17 @@
             margin-bottom: 2.5rem;
         }
 
+        h1, h2, h3, h4 {
+            color: #FF4500;
+            text-align: center;
+        }
+
         section h2 {
             margin-top: 1.5rem;
-            color: #FF4500;
             font-size: 2rem;
-            margin-bottom: 1rem;
         }
 
         section h3 {
-            color: #FF4500;
             font-size: 1.5rem;
             margin-top: 1.5rem;
             margin-bottom: 0.5rem;
@@ -135,11 +137,11 @@
 </head>
 
 <body>
-<header>
-    <h1>Smart Waste Management</h1>
+    <header>
+        <h1>Smart Waste Management</h1>
     </header>
     <p>Using IoT sensors and AI to optimize waste collection, recycling, and disposal, reducing landfill use and improving city cleanliness.</p>
-<p>Revenue Model: Subscription for waste management services, product sales (smart bins, recycling machines).</p>
+    <p>Revenue Model: Subscription for waste management services, product sales (smart bins, recycling machines).</p>
 
     <section>
         <h2>1. Inefficient Waste Collection</h2>
@@ -157,13 +159,13 @@
         <h4>Reason for Solution with Used Algorithm:</h4>
         <p>
             Dijkstra's Algorithm is used to find the shortest path from a starting point to all other waste collection points, minimizing travel time and fuel consumption.
-         <p>Effeciency:O(|E|log|V|)</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Dijkstra's Code</a>
+            <p>Efficiency: O(|E|log|V|)</p>
+            <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Dijkstra's Code</a>
             <br>
             Floyd-Warshall Algorithm is ideal when multiple trucks are serving overlapping areas, as it computes the shortest paths between all pairs of locations, ensuring optimal coordination.
-     <p>Effeciency:O(V^3)</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Floyd-Warshall code</a>
-    </p>
+            <p>Efficiency: O(V^3)</p>
+            <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Floyd-Warshall Code</a>
+        </p>
 
         <h4>Impact:</h4>
         <p>Reduced operational costs, faster collection, and fewer overflowing bins.</p>
@@ -186,8 +188,8 @@
         <p>
             AVL Trees are used to efficiently maintain an ordered set of bins, allowing quick retrieval and prioritization of bins that are near full capacity. AVL Trees provide fast lookups, ensuring timely pickups.
         </p>
-        <p>Effeciency:O(log n)</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">AVL Tree code</a>
+        <p>Efficiency: O(log n)</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">AVL Tree Code</a>
 
         <h4>Impact:</h4>
         <p>Timely waste collection, cleaner streets, and improved public hygiene.</p>
@@ -210,8 +212,8 @@
         <p>
             Merge Sort is used for efficiently sorting waste materials (e.g., plastics, paper, metals). Its stable and divide-and-conquer approach ensures large datasets are handled effectively, maintaining order and efficiency in automated systems.
         </p>
-         <p>Effeciency:O(nlogn)</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Merge sort code</a>
+        <p>Efficiency: O(n log n)</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Merge Sort Code</a>
 
         <h4>Impact:</h4>
         <p>Higher recycling rates, reduced landfill waste, and better resource utilization.</p>
@@ -236,11 +238,13 @@
             <br>
             Linear Regression is used to predict future waste generation based on existing data trends, ensuring proactive planning.
         </p>
-        <p>Effeciency:O(1)</p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Hasing code</a>
+        <p>Efficiency: O(1)</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Hashing Code</a>
 
         <h4>Impact:</h4>
         <p>Proactive resource allocation, reduced waste overflow, and long-term sustainability.</p>
     </section>
+
+</body>
 
 </html>
