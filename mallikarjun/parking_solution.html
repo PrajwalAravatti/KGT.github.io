@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management with Shortest Path Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #87CEEB;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #FF4500;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            background-color: #fff;
+            border: 1px solid #FF4500;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            margin-top: 1.5rem;
+            color: #FF4500;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section h3 {
+            color: #FF4500;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section h4 {
+            color: #555;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-top: 0.8rem;
+        }
+
+        ul {
+            margin-top: 1.2rem;
+            margin-left: 1.5rem;
+            list-style-type: disc;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #FF4500;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #40E0D0;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section h3 {
+                font-size: 1.25rem;
+            }
+
+            section p, ul {
+                font-size: 1rem;
+            }
+
+            a {
+                padding: 10px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Smart Parking Solution</h1>
+    </header>
+  <p>Providing smart parking management systems that use IoT sensors and AI to optimize parking space usage and reduce traffic congestion.</p>
+<p>Revenue Model: Pay-per-use, subscription fees for parking services, and licensing of technology.</p>
+      <div class="section">
+        <div class="section-title">1. Penalty for Parking Violations</div>
+        <div class="problem">Problem:</div>
+        <p>When people park illegally or stay too long, how can we catch them and issue fines efficiently?</p>
+        <div class="solution">Solution:</div>
+        <p>We use a <strong>Hashing</strong> system to store records of parking violations and check quickly if a driver has broken the rules.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Hashing</strong> allows us to check violations in <strong>constant time (O(1))</strong>, so it’s fast and helps issue fines without delays.</p>
+        <div class="impact">Impact:</div>
+        <p>Drivers who break the rules are caught quickly, and fines are issued fast. This helps maintain parking order and discourages violations.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(1)</strong> (on average) because we can check violations instantly.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n)</strong> where n is the number of parking violations stored.</p>
+            <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Hashing Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">2. Finding the Nearest Available Parking Spot</div>
+        <div class="problem">Problem:</div>
+        <p>Drivers waste time circling around looking for parking spots, creating traffic congestion.</p>
+        <div class="solution">Solution:</div>
+        <p>We use <strong>Prim’s Algorithm</strong> to find the best and shortest path to the nearest available parking spot.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Prim’s Algorithm</strong> helps us build an efficient route to the nearest parking spot by connecting all parking spaces with minimal cost, ensuring we avoid unnecessary detours. This algorithm works well when dealing with a network of roads or parking spots.</p>
+        <div class="impact">Impact:</div>
+        <p>Less time wasted searching for a parking spot, reduced traffic congestion, and lower fuel consumption.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(E log V)</strong>, where E is the number of edges (roads) and V is the number of vertices (parking spots).</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(V + E)</strong>, where V is the number of parking spots and E is the number of road connections.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Prim's Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">3. Efficient Management of Parking Spaces</div>
+        <div class="problem">Problem:</div>
+        <p>With so many parking spaces, how can we quickly find and manage available spots?</p>
+        <div class="solution">Solution:</div>
+        <p>We use an <strong>AVL Tree</strong> to keep parking spots organized and balanced, allowing quick searching, inserting, and removing parking spots.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>AVL Trees</strong> are self-balancing binary search trees that ensure <strong>O(log n)</strong> time complexity for searching and updating the parking spots, making it efficient for managing large parking lots.</p>
+        <div class="impact">Impact:</div>
+        <p>Faster allocation of parking spots, reduced waiting time for drivers, and better overall management of parking areas.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(log n)</strong> for search, insertion, and deletion operations.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n)</strong>, where n is the number of parking spots.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">BST Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">4. Real-Time Tracking of Parking Space Availability</div>
+        <div class="problem">Problem:</div>
+        <p>How can we track which parking spaces are available in real-time across large parking lots?</p>
+        <div class="solution">Solution:</div>
+        <p>We use a <strong>Segment Tree</strong> to efficiently track and update parking spot availability across various segments.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Segment Trees</strong> allow us to update parking spot statuses and query availability in <strong>O(log n)</strong> time, making it ideal for real-time tracking.</p>
+        <div class="impact">Impact:</div>
+        <p>Real-time updates on parking spot availability, less time spent searching, and a smoother user experience for drivers.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(log n)</strong> for both updates and queries.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n)</strong>, where n is the number of segments in the parking lot.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Segment Tree Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">5. Finding the Right Parking Spot for Your Vehicle</div>
+        <div class="problem">Problem:</div>
+        <p>How do we quickly find the right parking spot for specific vehicle types (e.g., electric vehicles, compact cars)?</p>
+        <div class="solution">Solution:</div>
+        <p>We use a <strong>Trie</strong> data structure to store and search parking spots based on vehicle types.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Trie</strong> allows for fast searches for vehicle-specific spots (e.g., electric vehicle charging stations) in <strong>O(m)</strong> time, where m is the length of the vehicle type string.</p>
+        <div class="impact">Impact:</div>
+        <p>Drivers can quickly find parking spots tailored to their vehicle, improving convenience and user experience.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(m)</strong> for search, where m is the length of the vehicle type string.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n * m)</strong>, where n is the number of parking spots and m is the average length of the vehicle type string.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">Trie Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">6. Allocating Parking Spots to Multiple Vehicles</div>
+        <div class="problem">Problem:</div>
+        <p>How can we allocate parking spots efficiently to multiple vehicles at the same time, avoiding overlap?</p>
+        <div class="solution">Solution:</div>
+        <p>We use the <strong>Union-Find</strong> algorithm to manage the availability of contiguous parking spaces, ensuring no overlap.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Union-Find</strong> helps us efficiently track connected components, allowing for quick allocation of parking spots without overlap, ensuring all vehicles have a space.</p>
+        <div class="impact">Impact:</div>
+        <p>Efficient allocation of parking spots during peak times, reducing conflicts and ensuring smooth operations.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(α(n))</strong>, where α(n) is the inverse Ackermann function, which is nearly constant for practical input sizes.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n)</strong>, where n is the number of parking spots.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">union-find Code</a>
+    </div>
+
+    <div class="section">
+        <div class="section-title">7. Giving Priority Parking to Special Users (e.g., VIPs, EVs)</div>
+        <div class="problem">Problem:</div>
+        <p>How do we ensure priority parking for special users like VIPs or electric vehicles while optimizing overall parking?</p>
+        <div class="solution">Solution:</div>
+        <p>We use a <strong>Priority Queue (Heap)</strong> to assign parking spots based on priority.</p>
+        <div class="reason">Reason for Solution (with Used Algorithm):</div>
+        <p><strong>Heap</strong> allows for efficient insertion and removal of users based on priority with <strong>O(log n)</strong> time complexity, ensuring quick assignment of spots to those who need them most.</p>
+        <div class="impact">Impact:</div>
+        <p>VIPs and electric vehicles get their designated spots, improving user satisfaction and optimizing parking lot usage.</p>
+        <div class="time-complexity">Time Complexity:</div>
+        <p><strong>O(log n)</strong> for insertion and removal.</p>
+        <div class="space-complexity">Space Complexity:</div>
+        <p><strong>O(n)</strong>, where n is the number of users or parking spots.</p>
+          <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/prajwal/codes/merge_sort.cpp">priority queue(heap) Code</a>
+    </div>
+
+
+  
+
+   
+</body>
+</html>
