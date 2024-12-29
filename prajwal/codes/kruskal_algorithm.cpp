@@ -21,48 +21,36 @@ int findSet(vector<int> &arr, int u, int v) {
     return arr[u] == arr[v];
 }
 
-void mergeVectors(vector<Edge> &B, vector<Edge> &C, vector<Edge> &A) {
-    int p = B.size();
-    int q = C.size();
-    int i = 0, j = 0, k = 0;
+void heapify(vector<Edge> &A, int n, int i) {
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
 
-    while (i < p && j < q) {
-        if (B[i].weight <= C[j].weight) {
-            A[k] = B[i];
-            i++;
-        } else {
-            A[k] = C[j];
-            j++;
-        }
-        k++;
+    if (left < n && A[left].weight > A[largest].weight) {
+        largest = left;
     }
-    while (i < p) {
-        A[k] = B[i];
-        i++;
-        k++;
+
+    if (right < n && A[right].weight > A[largest].weight) {
+        largest = right;
     }
-    while (j < q) {
-        A[k] = C[j];
-        j++;
-        k++;
+
+    if (largest != i) {
+        swap(A[i], A[largest]);
+        heapify(A, n, largest);
     }
 }
 
-void mergeSort(vector<Edge> &A) {
+void heapSort(vector<Edge> &A) {
     int n = A.size();
-    if (n <= 1) {
-        return;
+
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapify(A, n, i);
     }
 
-    int mid = n / 2;
-
-    vector<Edge> B(A.begin(), A.begin() + mid);
-    vector<Edge> C(A.begin() + mid, A.end());
-
-    mergeSort(B);
-    mergeSort(C);
-
-    mergeVectors(B, C, A);
+    for (int i = n - 1; i > 0; i--) {
+        swap(A[0], A[i]);
+        heapify(A, i, 0);
+    }
 }
 
 vector<Edge> kruskalMST(vector<Edge> &edges, vector<int> &arr, int n) {
@@ -108,7 +96,7 @@ int main() {
         }
     }
 
-    mergeSort(edges);
+    heapSort(edges);
 
     vector<Edge> mst = kruskalMST(edges, arr, n);
 
