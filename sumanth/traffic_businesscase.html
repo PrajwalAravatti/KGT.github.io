@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Smart Traffic Management System</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* General Reset */
@@ -138,86 +138,69 @@
             }
         }
     </style>
+</head>
 
 <body>
-    <h1>Smart Traffic Management System</h1>
-    <p>Smart traffic management systems in smart cities aim to optimize traffic flow, reduce congestion, and enhance safety. Below is an explanation of how data structures and Kruskal’s algorithm are utilized in these systems:</p>
-    
-    <h2>1. Data Structures in Smart Traffic Management Systems</h2>
-    <ul>
-        <li>
-            <strong>Graph Data Structures:</strong> Roads and intersections are represented as a weighted graph.
-            <ul>
-                <li><strong>Nodes:</strong> Represent intersections.</li>
-                <li><strong>Edges:</strong> Represent roads connecting intersections.</li>
-                <li><strong>Weights:</strong> Represent traffic density, travel time, or distance.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Priority Queues:</strong> Used to prioritize tasks such as finding the shortest route or selecting the least congested path.
-        </li>
-        <li>
-            <strong>Disjoint Set (Union-Find):</strong> Helps manage connected components of a graph and prevents cycles in Kruskal’s algorithm.
-        </li>
-         <strong>Merge Sort:</strong> Helps to sort the edges by weight.
-        <li>
-            <strong>Dynamic Arrays/Hash Maps:</strong> Store dynamic data like traffic signals vehicle density.
-        </li>
-    </ul>
+    <header>
+        <h1>Smart Traffic Management System</h1>
+        <p>Smart traffic management systems in smart cities aim to optimize traffic flow, reduce congestion, and enhance safety.</p>
+    </header>
 
-    <h2>2. Kruskal’s Algorithm in Smart Traffic Management</h2>
-    <p>Kruskal’s algorithm finds the Minimum Spanning Tree (MST) of a graph. It can optimize traffic systems by identifying routes with minimal congestion or maintenance costs.</p>
-    
-    <h3>Steps in Kruskal’s Algorithm</h3>
-    <ol>
-        <li><strong>Sort Edges by Weight:</strong> Arrange roads by increasing traffic congestion or travel time.</li>
-        <li><strong>Initialize Disjoint Sets:</strong> Use a union-find data structure to manage connectivity.</li>
-        <li><strong>Add Edges to MST:</strong> Select the smallest edge that does not form a cycle.</li>
-        <li><strong>Repeat:</strong> Continue until all intersections are connected.</li>
-    </ol>
+    <section>
+        <h2>1. Data Structures in Smart Traffic Management Systems</h2>
+        <ul>
+            <li>
+                <strong>Graph Data Structures:</strong> Roads and intersections are represented as a weighted graph.
+                <ul>
+                    <li><strong>Nodes:</strong> Represent intersections.</li>
+                    <li><strong>Edges:</strong> Represent roads connecting intersections.</li>
+                    <li><strong>Weights:</strong> Represent traffic density, travel time, or distance.</li>
+                </ul>
+            </li>
+            <li><strong>Priority Queues:</strong> Used to prioritize tasks such as finding the shortest route or selecting the least congested path.</li>
+            <li><strong>Disjoint Set (Union-Find):</strong> Helps manage connected components of a graph and prevents cycles in Kruskal’s algorithm.</li>
+            <li><strong>Merge Sort:</strong> Helps to sort the edges by weight.</li>
+            <li><strong>Dynamic Arrays/Hash Maps:</strong> Store dynamic data like traffic signals and vehicle density.</li>
+        </ul>
 
-    <h3>Application Example</h3>
-    <div class="highlight">
-        <p><strong>Scenario:</strong> A city has multiple routes with varying congestion levels.</p>
-        <p><strong>Goal:</strong> Find the least congested route layout to connect all major intersections.</p>
-        <p><strong>Implementation:</strong>  Kruskal’s algorithm to minimize  the overall traffic congestion .</p>
-    </div>
+        <h2>2. Kruskal’s Algorithm in Smart Traffic Management</h2>
+        <p>Kruskal’s algorithm finds the Minimum Spanning Tree (MST) of a graph. It can optimize traffic systems by identifying routes with minimal congestion or maintenance costs.</p>
 
-    <h2>3. Benefits in Smart Cities</h2>
-    <ul>
-        <li><strong>Efficient Traffic Flow:</strong> Reduces travel time and congestion.</li>
-        <li><strong>Cost Optimization:</strong> Minimizes infrastructure.</li>
-        <li><strong>Real-time Adaptability:</strong> </li>
-    </ul>
-</body>
-</html>
+        <h3>Steps in Kruskal’s Algorithm</h3>
+        <ol>
+            <li><strong>Sort Edges by Weight:</strong> Arrange roads by increasing traffic congestion or travel time.</li>
+            <li><strong>Initialize Disjoint Sets:</strong> Use a union-find data structure to manage connectivity.</li>
+            <li><strong>Add Edges to MST:</strong> Select the smallest edge that does not form a cycle.</li>
+            <li><strong>Repeat:</strong> Continue until all intersections are connected.</li>
+        </ol>
 
-</body>
-</html>
-<h4>data generated from small part of the city</h4>
-        <p>
-            Here is the some data and graph generated from for above business from small part of our city project
-            link below:
-        </p>
-        
-       <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/sumanth/traffic_graph_data.pdf">Data generated</a>
-      
-        <h4>kruskal's algorithm Implementation in C++</h4>
-         <p>efficiency:O(|E|log|E|)<p>
-        <p>
-            Here is the implementation of kruskal's algorithm in C++. You can view the code using the
-            link below:
-        </p>
-        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/sumanth/kruskal's">kruskal'sCode</a>
-          <h4>Merge Sort Implementation in C++</h4>
- <p>efficiency:O(N log N)<p>
+        <h3>Application Example</h3>
+        <div class="highlight">
+            <p><strong>Scenario:</strong> A city has multiple routes with varying congestion levels.</p>
+            <p><strong>Goal:</strong> Find the least congested route layout to connect all major intersections.</p>
+            <p><strong>Implementation:</strong> Use Kruskal’s algorithm to minimize the overall traffic congestion.</p>
+        </div>
 
-        <p>
-            Here is the implementation of merge sort in C++. You can view the code using the
-            link below:
-        </p>
+        <h2>3. Benefits in Smart Cities</h2>
+        <ul>
+            <li><strong>Efficient Traffic Flow:</strong> Reduces travel time and congestion.</li>
+            <li><strong>Cost Optimization:</strong> Minimizes infrastructure costs.</li>
+            <li><strong>Real-time Adaptability:</strong> Adapts to traffic patterns dynamically.</li>
+        </ul>
+
+        <h4>Data generated from a small part of the city</h4>
+        <p>Here is some data and a graph generated for the above system from a small part of our city project. Link below:</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/sumanth/traffic_graph_data.pdf">Data generated</a>
+
+        <h4>Kruskal's Algorithm Implementation in C++</h4>
+        <p>Efficiency: O(|E| log |E|)</p>
+        <p>Here is the implementation of Kruskal's algorithm in C++. You can view the code using the link below:</p>
+        <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/sumanth/kruskal's">Kruskal's Code</a>
+
+        <h4>Merge Sort Implementation in C++</h4>
+        <p>Efficiency: O(N log N)</p>
+        <p>Here is the implementation of merge sort in C++. You can view the code using the link below:</p>
         <a href="https://github.com/PrajwalAravatti/KGT.github.io/blob/main/sumanth/mergesort.cpp">Merge Sort Code</a>
-         
     </section>
 </body>
 
